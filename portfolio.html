@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="conatiner">
+        <nav>
+            <ul>
+                <li><a href="#"><button>HOME</button></a></li>
+                <li><a href='#'><button>ABOUT</button></a></li>
+                <li><a href='#'><button>EXPERIENCE</button></a></li>
+                <li><a href='#'><button>CONTACT</button></a></li>
+                <a href="https://www.facebook.com/thatohatsi.marcia.1/" class="fa fa-facebook">f</a>
+                <a href="https://twitter.com/MarciaSoftware" class="fa fa-twitter">t</a>
+            </ul>
+
+        </nav>
+        <header>
+            <img src="./thato.jpg">
+            <h1>
+                Thatohatsi Marcia
+            </h1>
+            
+        </header>
+        <section>
+        <div class='row1'>
+            <button class="about"name="About"><a href="#">About</a></button>
+                <div class="content">
+                <h1>Genereal overview</h1>
+                    My name is Thatohatsi Marcia Tsoho. I specialise in creating beautiful, usable, professional websites using best practic
+                    accessibility and the lates W2School web standards quidelines, resulting in semantic languages. All my projects are lovingly hand coded.
+
+                <h2>Statistics</h2>    
+                Female, 26 years old.
+                Grew up and matriculated in Eastern cape.
+                Started my career at College in Mulsmasbury pursuing secretary studies.
+                Staying at mfuleni with my 2 years old daughter.
+                Have two siblings(brother and a sister both young) with one parent surviving.
+                Started working at a call cenetr doing sales for a year.
+                I once became a student tutor for computer practice and information processing
+                I worked as a customer analyst, recieving international calls from UK clients.
+                Started coding when I was doing grade 10 with only basic html.
+                I have once attended C language bootcamp at WeThinkCode(an international company from Paris).
+                Completed a Python course at Capaciti (covered SQL, MySQL, machine learning, artificila learning, visualisation and programing with matplotlib libraries and others).
+            </div>   
+            <button class="backend" name="Backend"><a href="#">Backend</a></button>
+                <div class="content1">
+                    <a href="https://my-kairo.github.io/bootcamp-tests/">TESTS</a>
+                </div>
+            <button class="frontend" name="Frontend"><a href="#">Frontend</a></button>
+                <div class="content2">
+                    <a href="https://my-kairo.github.io/dom-intro/">DOM</a>
+                    <a href="https://my-kairo.github.io/basic_website/">WEBSITE</a>
+                </div>
+        </div>
+        <div class='row2'>
+            <a href="./Thato-CV (1).docx" download="CV">Download CV here</a>
+        </div>
+        </section>
+
+        <script>
+            var coll = document.getElementsByClassName("about");
+            
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+                });
+            }
+
+            var coll = document.getElementsByClassName("backend");
+            
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+                });
+            }
+
+
+            var coll = document.getElementsByClassName("frontend");
+            
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+                });
+            }
+        </script>
+    
+</body>
+</html>
